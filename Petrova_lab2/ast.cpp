@@ -148,7 +148,7 @@ Graph::~Graph()
 {
 	for (int i = 0; i < MAX_SIZE; i++)
 		delete[] mMatrix[i];
-	delete mMatrix;
+	delete[] mMatrix;
 }
 
 bool Graph::nodeFound(char c)
